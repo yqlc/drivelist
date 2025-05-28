@@ -65,6 +65,8 @@
           ]
         }],
         [ 'OS=="linux"', {
+          "cflags_cc": [ "-std=gnu++2a" ],
+          "cflags_cc!": [ "-fno-exceptions", "-std=gnu++20" ],
           "sources": [
             "src/linux/list.cpp"
           ]
